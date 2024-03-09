@@ -17,19 +17,33 @@ header {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 10px 200px ;
+    padding: 10px  ;
 }
-
+.navbar{
+display: flex;
+}
+.logo-img{
+    border-radius: 100%;
+    width: 50px;
+    height: inherit;
+}
+.logo-section{
+    gap: 20px;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+}
 .logo{
     text-decoration: none;
-    color: #3a6cf4;
+    color: #51bbaf;
     text-transform: uppercase;
     font-weight: 700;
-    font-size: 1.8em;
+    font-size: 20px;
 }
 
 .navigation a{
-    color: #3a6cf4;
+    color: #51bbaf;
     text-decoration: none;
     font-size: 1.1em;
     font-weight: 500;
@@ -37,11 +51,11 @@ header {
 }
 
 .navigation a:hover{
-    color: #601cfc;
+    color: #295e58;
 }
 
 section {
-    padding: 100px 200px;
+    /* padding: 100px 180px; */
 }
 
 .main {
@@ -49,22 +63,40 @@ section {
     min-height: 100vh;
     display: flex;
     align-items: center;
-    background: url(images/1686263492_en-idei-club-p-background-dizain-6.jpg) no-repeat;
+    background: url(images/فصل.webp) no-repeat;
     background-size: cover;
     background-position: center;
     background-attachment: fixed;
+   
 }
+.top-main{
+    padding: 100px 180px;
+    display: flex;
+    align-items: center;
+    min-width: 100%;
+    backdrop-filter: blur(5px);
+    background-color: rgba(0, 0, 0, 0.296);
+    min-height: 100vh;
 
+}
 .main h2 {
+    box-shadow: #000;
     color: #fff;
     font-size: 1.4em;
     font-weight: 500;
 }
+.content-main{
+    opacity: 100%;
+    box-shadow: #000;
+    text-shadow: #000;
+
+}
 
 .main h2 span {
+    box-shadow: #000;
     display: inline-block;
     margin-top: 10px;
-    color: #4e9eff;
+    color: #51bbaf;
     font-size: 3em;
     font-weight: 600;
 }
@@ -77,10 +109,15 @@ section {
     margin-top: 10px;
     margin-bottom: 30px;
 }
+body{
+  display: flex;
+  flex-flow: column;
+  gap:180px;
+}
 
 .main-btn {
     color: #fff;
-    background-color: #3a6cf4;
+    background-color: #51bbaf;
     text-decoration: none;
     font-size: 1.1em;
     font-weight: 600;
@@ -93,7 +130,7 @@ section {
 }
 
 .main-btn:hover {
-    background-color: #0a49f6;
+    background-color: #295e58;
     transform: scale(1.1);
 }
 
@@ -106,13 +143,15 @@ section {
 .title {
     display: flex;
     justify-content: center;
-    color: #3a6cf4;
+    color: #51bbaf;
     font-size: 2.2em;
     font-weight: 800;
     margin-bottom: 30px;
 }
 
 .content {
+  padding-left: 200px;
+  padding-right: 200px;
     display: flex;
     justify-content: center;
     flex-direction: row;
@@ -134,7 +173,7 @@ section {
 }
 
 .card .icon {
-    color: #3a6cf4;
+    color: #51bbaf;
     font-size: 8em;
     text-align: center;
 }
@@ -144,14 +183,16 @@ section {
 }
 
 .info h3{
-    color: #3a6cf4;
+    color: #51bbaf;
     font-size: 1.2em;
     font-weight: 700;
     margin: 10px;
 }
 
 .projects {
-    background-color: #000016;
+    padding-top: 180px;
+    padding-bottom: 180px;
+    background-color: #f0f0f0;
 }
 
 .projects .content{
@@ -200,11 +241,11 @@ section {
 
 .more-details {
     text-decoration: none;
-    color: #3a6cf4;
+    color: #51bbaf;
 }
 
 .more-details:hover {
-    color: #601cfc;
+    color: #295e58;
 }
 
 .contact .icon{
@@ -212,15 +253,20 @@ section {
 }
 
 .contact .info h3 {
+    
     color: #000;
 }
 
 .contact .info p {
-    font-size: 1.5em;
+    padding-left: 10px;
+    padding-right: 10px;
+    font-size: 20px;
 }
 
 .footer {
-    background-color: #000016;
+    font-size: 12px;
+    font-weight: 400;
+    background-color: #f0f0f0;
     color: #fff;
     padding: 2em;
     display: flex;
@@ -228,17 +274,25 @@ section {
 }
 
 .footer-title {
-    font-size: 1.3em;
+    font-size: 14px;
     font-weight: 600;
+    color: #51bbaf;
 }
 
 .footer-title span {
-    color: #3a6cf4;
+  font-size: 12px;
+  font-weight: 600;
+  color: #51bbaf;;
 }
 
 .footer .social-icons a{
     font-size: 1.3em;
+    color: #51bbaf;
     padding: 0 12px 0 0;
+}
+.copyright{
+    display: flex;
+    justify-content: space-between;
 }
 
 @media (max-width:1023px){
